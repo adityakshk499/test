@@ -13,11 +13,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-app.use("/api", foodRouter);
+app.use("/api/food", foodRouter);
 app.use("/api/images", express.static("uploads"));
-app.use("/api", userRouter);
-app.use("/api", cartRouter);
-app.use("/api", orderRouter);
+app.use("/api/user", userRouter);
+app.use("/api/cart", cartRouter);
+app.use("/api/order", orderRouter);
 
 connectDB();
 
