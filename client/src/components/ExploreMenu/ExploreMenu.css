@@ -1,0 +1,72 @@
+
+.explore-menu{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.explore-menu h1{
+  color: rgb(43, 43, 43);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 0.8vw;
+  font-family:'Segoe UI';
+}
+.explore-menu-text{
+  max-width: 100%;
+  color: rgb(112, 111, 111);
+  font-size: 20px;
+  text-align: center;
+  font-family:cursive;
+}
+.explore-menu-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3vw;
+  text-align: center;
+  margin: 2vw 0;
+  overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+  display: none;
+}
+.explore-menu-list-item img{
+width: 7vw;
+min-width: 80px;
+cursor: pointer;
+border-radius: 50%;
+transition: 0.2s;
+}
+.explore-menu-list-item p{
+  margin-top: 12px;
+  font-size:max(1.2vw,18px);
+  font-weight: 500;
+  cursor: pointer;
+  color:rgb(43, 43, 43) ;
+}
+.explore-menu hr{
+  margin:1.4vw 0;
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+
+}
+.explore-menu-list-item .active{
+  border: 2px solid orangered;
+  padding: 2px;
+}
+@media (max-width:1050px){
+  .explore-menu-text{
+    max-width: 100%;
+    font-size: 20px;
+    color: rgb(28, 27, 27);
+  }
+}
+@media (max-width:750px){
+  .explore-menu-text{
+    max-width: 100%;
+    font-size:24px;
+    color: rgb(33, 32, 32);
+  }
+}

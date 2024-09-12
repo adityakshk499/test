@@ -1,0 +1,42 @@
+
+.add-list{
+  margin-left: max(7vw,36px);
+  margin-top: 40px;
+  width: 70%;
+  font-size: 18px;
+}
+.add-list .heading-list{
+  font-size: 24px;
+  color: orangered;
+  font-family: cursive;
+  font-weight: 600;
+}
+.list-table-format{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid #cacaca;
+  font-size: 18px;
+  font-weight: 500;
+}
+.title{
+  background-color: rgb(201, 198, 198);
+}
+.list-table-format img{
+  width: 60px;
+}
+.remove-icon{
+  color: orangered;
+  cursor: pointer;
+}
+@media (max-width:900px) {
+  .list-table-format{
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 14px;
+  }
+  .list-table-format.title{
+    display: none;
+  }
+}
