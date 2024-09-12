@@ -14,10 +14,10 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/food", foodRouter);
-app.use("/api/images", express.static("uploads"));
-app.use("/api/user", userRouter);
-app.use("/api/cart", cartRouter);
-app.use("/api/order", orderRouter);
+// app.use("/api/images", express.static("uploads"));
+// app.use("/api/user", userRouter);
+// app.use("/api/cart", cartRouter);
+// app.use("/api/order", orderRouter);
 
 connectDB();
 
